@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Overview](#overview)
+- [License](#license)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#how-to-use)
@@ -24,7 +25,7 @@ With support for multiple key types, derivation schemes, and other network speci
 ## License
 
 Licensed under the PolyForm Noncommercial License 1.0.0.
-Commercial use requires a separate license.
+Commercial use requires a separate written commercial license agreement from the licensor — contact alex@vir-tec.net.
 
 <a id="features"></a>
 ## Key Features

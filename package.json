@@ -1,6 +1,6 @@
 {
   "name": "@extra-wallet/hd-derivations",
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0-beta.5",
   "license": "PolyForm-Noncommercial-1.0.0",
   "description": "",
   "main": "./build/node/index.js",
@@ -15,8 +15,9 @@
   },
   "files": [
     "build",
-    "readme.md",
-    "LICENSE"
+    "README.md",
+    "LICENSE",
+    "NOTICE"
   ],
   "publishConfig": {
     "access": "public"
@@ -49,7 +50,8 @@
     "lint:type": "npx tsc --noEmit",
     "lint:js": "eslint .",
     "lint": "yarn lint:prettify:check && yarn lint:fs && yarn lint:type && yarn lint:js",
-    "prepublish": "yarn lint && npm publish --tag beta --dry-run > publish-logs.log 2>&1 && yarn test"
+    "prepublish": "yarn lint && npm publish --tag beta --dry-run > publish-logs.log 2>&1 && yarn test",
+    "postinstall": "patch-package"
   },
   "simple-git-hooks": {
     "pre-commit": "yarn build:graph"
@@ -96,6 +98,8 @@
     "eslint-plugin-prettier": "5.5.4",
     "glob": "11.0.1",
     "jiti": "2.6.1",
+    "patch-package": "8.0.1",
+    "postinstall-postinstall": "2.1.0",
     "prettier": "3.7.3",
     "tsc-alias": "1.8.10",
     "tsx": "4.19.1",
