@@ -192,11 +192,11 @@ The network instance has the following methods:
 
 #### Parameters
 
-Networks parameters are defined in the [`instance-parameters.type.ts`](src/modules/network/libs/types/instance-parameters.type.ts) file.
+Networks parameters are defined in the [`InstanceParameters`](src/modules/network/libs/types/instance-parameters.type.ts) type.
 
-> **Polkadot:** You can find the list of `ss58` formats in the [ss 58 registry](https://github.com/paritytech/ss58-registry/blob/main/ss58-registry.json).
+**Info:** You can find the list of Polkadot `ss58` formats in the [ss 58 registry](https://github.com/paritytech/ss58-registry/blob/main/ss58-registry.json).
 
-Networks methods parameters are defined in the [`abstract-network.type.ts`](src/modules/network/libs/types/abstract-network.type.ts) file.
+Networks methods parameters are defined in the [`AbstractNetwork`](src/modules/network/libs/types/abstract-network.type.ts) type.
 
 <a id="folder-structure"></a>
 ## Folder Structure
@@ -222,14 +222,14 @@ Networks methods parameters are defined in the [`abstract-network.type.ts`](src/
 
 > **Adapt or reuse any existing module if possible**
 
-- Implement curve logic in the [`curves`](src/libs/modules//curves/curves.ts)
-- Implement credentials logic in [`key-derivation`](src/libs/modules/key-derivation/index.ts)
-- Implement address logic in [`address`](src/libs/modules/address/index.ts)
-- Add the network derivation types to [`DerivationTypeUnion`](src/libs/types/derivation/derivation-type-union.type.ts)
-- Add the network to [`NetworkTypeMap`](src/modules/network/libs/types/network-type-map.type.ts)
-- Adapt [`AbstractNetwork`](src/modules/network/libs/types/abstract-network.type.ts) to support the network
-- Adapt [`ConstructorParameters`](src/modules/network/libs/types/constructor-parameters.type.ts) for the network
-- Implement derivation handlers in `src/modules/network/{network}/libs/helpers/get-derivation-handlers.helper.ts`
+- Implement curve logic in the [`curves`](src/libs/modules/curves) directory
+- Implement credentials logic in the [`key-derivation`](src/libs/modules/key-derivation) directory
+- Implement address logic in the [`address`](src/libs/modules/address) directory
+- Add the network derivation types to the [`DerivationTypeUnionByNetwork`](src/libs/types/derivation/derivation-type-union.type.ts) type
+- Add the network to the [`NetworkTypeMap`](src/modules/network/libs/types/network-type-map.type.ts) type
+- Adapt the [`AbstractNetwork`](src/modules/network/libs/types/abstract-network.type.ts) file to support the network
+- Adapt the [`ConstructorParameters`](src/modules/network/libs/types/constructor-parameters.type.ts) type for the network
+- Implement derivation handlers in the `src/modules/network/{network}/libs/helpers/get-derivation-handlers.helper.ts` file
 - Add `derivationHandlers` field to the network class
 - Implement `deriveItemFromMnemonic`, `getCredentialFromPK`, `deriveItemsBatchFromMnemonic` and `doesPKBelongToMnemonic` methods
 - Extend the [`getNetwork`](src/modules/network/get-network/get-network.ts) function
