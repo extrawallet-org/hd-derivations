@@ -74,7 +74,7 @@
 [@types/istanbul-lib-report@3.0.3](https://github.com/DefinitelyTyped/DefinitelyTyped) - MIT
 [@types/istanbul-reports@1.1.2](https://github.com/DefinitelyTyped/DefinitelyTyped) - MIT
 [@types/jest@25.2.3](https://github.com/DefinitelyTyped/DefinitelyTyped) - MIT
-[@types/ledgerhq__hw-transport@4.21.8](https://github.com/DefinitelyTyped/DefinitelyTyped) - MIT
+[@types/ledgerhq\_\_hw-transport@4.21.8](https://github.com/DefinitelyTyped/DefinitelyTyped) - MIT
 [@types/lodash@4.17.23](https://github.com/DefinitelyTyped/DefinitelyTyped) - MIT
 [@types/node@10.12.18](https://github.com/DefinitelyTyped/DefinitelyTyped) - MIT
 [@types/node@13.13.52](https://github.com/DefinitelyTyped/DefinitelyTyped) - MIT
@@ -320,4 +320,3 @@
 [xrpl@4.4.3](https://github.com/XRPLF/xrpl.js) - ISC
 [xtend@4.0.2](https://github.com/Raynos/xtend) - MIT
 [zod@3.25.76](https://github.com/colinhacks/zod) - MIT
-
